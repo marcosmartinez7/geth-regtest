@@ -1,6 +1,7 @@
 # geth-regtest
 Regtest like ethereum private network setup
 
+
 # Motivation 
 
 Normally, at `Bitcoin`, `Rootstock` or other blockchains there are regression test configurations for development. Those configs allows:
@@ -10,6 +11,11 @@ Normally, at `Bitcoin`, `Rootstock` or other blockchains there are regression te
 - Just focus on setup one unique node
 
 There is no `regtest` client for `geth`, at least at this moment (*) but we can create a private network with one miner. 
+
+
+# Prerequisite
+
+`geth` installed: https://github.com/ethereum/go-ethereum/wiki/Installing-Geth
 
 
 (*)
