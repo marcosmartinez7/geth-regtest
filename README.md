@@ -44,6 +44,10 @@ Where:
 4. Modify the `regtest-low-dif.json` genesis file: replace the example address `d025f1e3f633eb4816661c68155b6bf9cc43be16` for your address under the `alloc` config. This will give you some ETH when you create your chain
 5. The `regtest-low-dif-json` uses a low mining dificulty (`0x1`) in order to have fast blocks and set up your chain with the `chain-id` = `33`. You can change both values if you want
 
+Note: 
+
+The `regtest-low-dif-json` was created using `puppeth`, only the account balance and difficulty were modified. Feel free to use `puppeth` to create the genesis file instead of using the provided.
+
 
 # Initialize the regtest blockchain 
 
