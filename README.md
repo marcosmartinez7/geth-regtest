@@ -12,15 +12,17 @@ Normally, at `Bitcoin`, `Rootstock` or other blockchains there are regression te
 
 There is no `regtest` client for `geth`, at least at this moment (*) but we can create a private network with one miner. 
 
+(*)
+- https://ethereum.stackexchange.com/questions/1839/regtest-mode-on-ethereum
+- https://ethereum.stackexchange.com/questions/22906/geth-dev-mining
+
+
 
 # Prerequisite
 
 `geth` installed: https://github.com/ethereum/go-ethereum/wiki/Installing-Geth
 
 
-(*)
-- https://ethereum.stackexchange.com/questions/1839/regtest-mode-on-ethereum
-- https://ethereum.stackexchange.com/questions/22906/geth-dev-mining
 
 # Setup
 
