@@ -3,13 +3,13 @@ Regtest like ethereum private network setup
 
 # Motivation 
 
-Normally, at Bitcoin, Rootstock or other blockchains there are regression test configurations for development. Those configs allows:
+Normally, at `Bitcoin`, `Rootstock` or other blockchains there are regression test configurations for development. Those configs allows:
 
-- Mine blocks fast for when we are under development (like Truffle or Ganache i.e) 
+- Mine blocks fast for when we are under development (like `Truffle` or `Ganache` i.e) 
 - Test our dApps, Smart Contracts or layer two solutions
 - Just focus on setup one unique node
 
-There is no regtest client for geth, at least at this moment (*) but we can create a private network with one miner. 
+There is no `regtest` client for `geth`, at least at this moment (*) but we can create a private network with one miner. 
 
 
 (*)
@@ -33,16 +33,16 @@ There is no regtest client for geth, at least at this moment (*) but we can crea
 
 Where: 
 
-- node1: folder where the private chain data is stored. 
-- geth: node database
-- keystore: the address that we are going to use to interact with our node.
-- password: the password of the keystore file
-- regtest-low-dif.json: genesis file
+- `node1`: folder where the private chain data is stored. 
+- `geth`: node database
+- `keystore`: the address that we are going to use to interact with our node.
+- `password`: the password of the keystore file
+- `regtest-low-dif.json`: genesis file
 
-2. Put your keystore on the keystore folder, just as the example. 
-3. Modify the password.txt file and put your keystore password
-4. Modify the regtest-low-dif.json genesis file: replace the example address d025f1e3f633eb4816661c68155b6bf9cc43be16 for your address under the alloc config. This will give you some ETH when you create your chain
-5. The regtest-low-dif-json uses a low mining dificulty (0x1) in order to have fast blocks and set up your chain with the chain-id = 33. You can change both values if you want
+2. Put your keystore on the `keystore` folder, just as the example. 
+3. Modify the `password.txt` file and put your keystore password
+4. Modify the `regtest-low-dif.json` genesis file: replace the example address `d025f1e3f633eb4816661c68155b6bf9cc43be16` for your address under the `alloc` config. This will give you some ETH when you create your chain
+5. The `regtest-low-dif-json` uses a low mining dificulty (`0x1`) in order to have fast blocks and set up your chain with the `chain-id` = `33`. You can change both values if you want
 
 
 # Initialize the regtest blockchain 
