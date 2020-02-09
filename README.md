@@ -114,7 +114,12 @@ INFO [02-09|16:20:58.430] Commit new mining work                   number=11 sea
 ```
 
 
+# Restart from genesis block 
 
+If you want to restart the chain just
 
+- remove the `node1/geth` folder
+- initialize again the chain ( `eth-regtest$ geth --datadir ./node1 init regtest-low-dif.json` )
+- run! 
 
 
