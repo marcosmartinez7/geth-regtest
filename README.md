@@ -4,7 +4,7 @@ Regtest like ethereum private network setup
 
 # Motivation 
 
-Normally, at `Bitcoin`, `Rootstock` or other blockchains there are regression test configurations for development. Those configs allows:
+Normally, at `Bitcoin`, `Rootstock` or other blockchains there are regression test configurations for development. Those configs allow the developer to:
 
 - Mine blocks fast for when we are under development (like `Truffle` or `Ganache` i.e) 
 - Test our dApps, Smart Contracts or layer two solutions
@@ -54,7 +54,7 @@ Where:
 
 Note: 
 
-The `regtest-low-dif-json` was created using `puppeth`, only the account balance and difficulty were modified. Feel free to use `puppeth` to create the genesis file instead of using the provided.
+The `regtest-low-dif-json` was created using `puppeth` (https://github.com/ethereum/go-ethereum/tree/master/cmd/puppeth), only the account balance and difficulty were modified. Feel free to use `puppeth` to create the genesis file instead of using the provided.
 
 
 # Initialize the regtest blockchain 
@@ -131,7 +131,7 @@ INFO [02-09|16:20:58.430] Commit new mining work                   number=11 sea
 If you want to restart the chain just
 
 - remove the `node1/geth` folder
-- initialize again the chain ( `eth-regtest$ geth --datadir ./node1 init regtest-low-dif.json` )
+- initialize the chain again ( `eth-regtest$ geth --datadir ./node1 init regtest-low-dif.json` )
 - run! 
 
 
