@@ -65,6 +65,11 @@ The `regtest-low-dif-json` was created using `puppeth` (https://github.com/ether
 
 `eth-regtest$ geth --networkid 33 --mine --minerthreads 3 --datadir ./node1 --nodiscover --rpc --rpcport "4444" --port "30303" --rpccorsdomain "*" --nat "any" --rpcapi eth,web3,personal,net --unlock 'd025f1e3f633eb4816661c68155b6bf9cc43be16' --password ./node1/password.txt --allow-insecure-unlock`
 
+For newer version of `geth` run
+
+```
+geth --networkid 33 --mine --miner.threads 3 --datadir ./node1 --nodiscover --http --http.corsdomain "*" --nat "any" --unlock 'd025f1e3f633eb4816661c68155b6bf9cc43be16' --password ./node1/password.txt --allow-insecure-unlock
+```
 
 ```
 INFO [02-09|16:20:44.525] Maximum peer count                       ETH=25 LES=0 total=25
